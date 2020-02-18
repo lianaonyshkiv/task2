@@ -98,6 +98,16 @@ def read_coodinate_list(path: str) -> str:
     return new
 
 
+def create_list_with_coordinates(data: str) -> list:
+    """
+    Creates list with coordinates
+    """
+    lst = []
+    for i in data[2]:
+        lst.append(i)
+    return lst
+
+
 def place_from_coordinate(coordinate: str, data: str) -> str:
     """
     Returns place of users coordinate.
@@ -192,10 +202,14 @@ def generate_map(coordinate: list, zoom: int, data: str, data1: str):
 if __name__ == "__main__":
     # import doctest
     # doctest.testmod()
+    import random
     year = int(input("Please enter a year you would like to have a map: "))
     coordinate = input("Please enter your location (format: lat, long): ")
     if read_users_input_of_coordinate(coordinate) == True:
         print("Map is generating...\nPlease wait...")
+        lst = create_list_with_coordinates(read_coodinate_list("city_coordinates.tsv"))
+        if coordinate not in lst:
+            coordinate = lst[random.randint(1, len(lst))]
         data = sort_data(read_location_list("locations.list", year))
         coordinates_list = read_coodinate_list("city_coordinates.tsv")
         country = place_from_coordinate(coordinate, coordinates_list)
@@ -207,3 +221,4 @@ if __name__ == "__main__":
         generate_map(list_of_coordinate, 100, data, data1)
     else:
         print(read_users_input_of_coordinate(coordinate))
+

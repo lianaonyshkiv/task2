@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ba4f681cfda547e98eba5e356ca3ed82 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ba4f681cfda547e98eba5e356ca3ed82" ></div>
+        
+</body>
+<script>    
+    
+            var map_ba4f681cfda547e98eba5e356ca3ed82 = L.map(
+                "map_ba4f681cfda547e98eba5e356ca3ed82",
+                {
+                    center: [45.4126, -122.8322],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    defaultZoomStart: 100,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b7d1f687c1442ceb772af4a9957c104 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_ba4f681cfda547e98eba5e356ca3ed82);
+        
+    
+            var feature_group_50fba25a08804d83bbd8e7ea8184bb39 = L.featureGroup(
+                {}
+            ).addTo(map_ba4f681cfda547e98eba5e356ca3ed82);
+        
+    
+            var marker_92eb721e16fc44a9877966f32d14dc0e = L.marker(
+                [45.4126, -122.8322],
+                {}
+            ).addTo(feature_group_50fba25a08804d83bbd8e7ea8184bb39);
+        
+    
+            var icon_30ed0546af774183882fa0729cf26754 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_92eb721e16fc44a9877966f32d14dc0e.setIcon(icon_30ed0546af774183882fa0729cf26754);
+        
+    
+        var popup_1c4b133ab1db44cba27d68673a20359c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_521324c15e9d45d3b22283beb99b41cc = $(`<div id="html_521324c15e9d45d3b22283beb99b41cc" style="width: 100.0%; height: 100.0%;">Your location: 45.4126,-122.8322. Welcome to a beautiful place</div>`)[0];
+            popup_1c4b133ab1db44cba27d68673a20359c.setContent(html_521324c15e9d45d3b22283beb99b41cc);
+        
+
+        marker_92eb721e16fc44a9877966f32d14dc0e.bindPopup(popup_1c4b133ab1db44cba27d68673a20359c)
+        ;
+
+        
+    
+    
+            var feature_group_ce54fd9f671f4b298fc6a7cd50b2b6ac = L.featureGroup(
+                {}
+            ).addTo(map_ba4f681cfda547e98eba5e356ca3ed82);
+        
+    
+            var feature_group_571e476b214b4bfbb2d33d3467272c63 = L.featureGroup(
+                {}
+            ).addTo(map_ba4f681cfda547e98eba5e356ca3ed82);
+        
+    
+            var circle_marker_d952c1b735724610a0e57262f11a765e = L.circleMarker(
+                [61.52401, 105.318756],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_6259a0e1728d406a8913a5b7ada18a36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e5806e990dc43a8b426cbae76c1b893 = $(`<div id="html_1e5806e990dc43a8b426cbae76c1b893" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_6259a0e1728d406a8913a5b7ada18a36.setContent(html_1e5806e990dc43a8b426cbae76c1b893);
+        
+
+        circle_marker_d952c1b735724610a0e57262f11a765e.bindPopup(popup_6259a0e1728d406a8913a5b7ada18a36)
+        ;
+
+        
+    
+    
+            var circle_marker_e32f22cdddfc4c26b52c051a7a77f338 = L.circleMarker(
+                [48.379433, 31.165581],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_1e4d308184154b538891fac1ab45caf4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80d68e03e8f84b349f3e62ff0e47dddd = $(`<div id="html_80d68e03e8f84b349f3e62ff0e47dddd" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_1e4d308184154b538891fac1ab45caf4.setContent(html_80d68e03e8f84b349f3e62ff0e47dddd);
+        
+
+        circle_marker_e32f22cdddfc4c26b52c051a7a77f338.bindPopup(popup_1e4d308184154b538891fac1ab45caf4)
+        ;
+
+        
+    
+    
+            var circle_marker_210d6cacfd2f47ad8c35648b42865cc2 = L.circleMarker(
+                [46.227638, 2.213749],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_c065be64ae624dbf993c421bd783ea50 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_babbedf3d38b410a90e747ac3ed9acc2 = $(`<div id="html_babbedf3d38b410a90e747ac3ed9acc2" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_c065be64ae624dbf993c421bd783ea50.setContent(html_babbedf3d38b410a90e747ac3ed9acc2);
+        
+
+        circle_marker_210d6cacfd2f47ad8c35648b42865cc2.bindPopup(popup_c065be64ae624dbf993c421bd783ea50)
+        ;
+
+        
+    
+    
+            var circle_marker_55e3ffd199f7480baf19f654ccecfbc2 = L.circleMarker(
+                [40.463669, -3.74922],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_f3150342d977469fa2849057f7bb441c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a98c0f0e25d4f4e8eb72ad2fc871f02 = $(`<div id="html_9a98c0f0e25d4f4e8eb72ad2fc871f02" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_f3150342d977469fa2849057f7bb441c.setContent(html_9a98c0f0e25d4f4e8eb72ad2fc871f02);
+        
+
+        circle_marker_55e3ffd199f7480baf19f654ccecfbc2.bindPopup(popup_f3150342d977469fa2849057f7bb441c)
+        ;
+
+        
+    
+    
+            var circle_marker_8439321f22b64566ba4748aacf23ff40 = L.circleMarker(
+                [60.128162, 18.643501],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_b4d33fd18a3a41e4af6472f704c6cc90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9354c1c3e5643d482168b1a7858101d = $(`<div id="html_c9354c1c3e5643d482168b1a7858101d" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_b4d33fd18a3a41e4af6472f704c6cc90.setContent(html_c9354c1c3e5643d482168b1a7858101d);
+        
+
+        circle_marker_8439321f22b64566ba4748aacf23ff40.bindPopup(popup_b4d33fd18a3a41e4af6472f704c6cc90)
+        ;
+
+        
+    
+    
+            var circle_marker_5866bcc1e6374f36878ef428a0c234b2 = L.circleMarker(
+                [60.5000209, 9.0999715],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_5ec6b5c18f994e0f903da26a24da0d27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b137a52c06c4faf9df87bf0e505a655 = $(`<div id="html_7b137a52c06c4faf9df87bf0e505a655" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_5ec6b5c18f994e0f903da26a24da0d27.setContent(html_7b137a52c06c4faf9df87bf0e505a655);
+        
+
+        circle_marker_5866bcc1e6374f36878ef428a0c234b2.bindPopup(popup_5ec6b5c18f994e0f903da26a24da0d27)
+        ;
+
+        
+    
+    
+            var circle_marker_f3a91bf5f0ac407f85caac0daa6ac60c = L.circleMarker(
+                [51.0834196, 10.4234469],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_d518f00807114f64b324dd796619af1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86ac1411052c4180a48184a8c4313d33 = $(`<div id="html_86ac1411052c4180a48184a8c4313d33" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_d518f00807114f64b324dd796619af1e.setContent(html_86ac1411052c4180a48184a8c4313d33);
+        
+
+        circle_marker_f3a91bf5f0ac407f85caac0daa6ac60c.bindPopup(popup_d518f00807114f64b324dd796619af1e)
+        ;
+
+        
+    
+    
+            var circle_marker_8ad469966da14823a6bda1cf201230a5 = L.circleMarker(
+                [63.2467777, 25.9209164],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_6986293d93754700a8de499f34bfb613 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e1344a46f7a14758b6b14faada479ee8 = $(`<div id="html_e1344a46f7a14758b6b14faada479ee8" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_6986293d93754700a8de499f34bfb613.setContent(html_e1344a46f7a14758b6b14faada479ee8);
+        
+
+        circle_marker_8ad469966da14823a6bda1cf201230a5.bindPopup(popup_6986293d93754700a8de499f34bfb613)
+        ;
+
+        
+    
+    
+            var circle_marker_e81f96d4b47a4303a306772b82c59c35 = L.circleMarker(
+                [52.215933, 19.134422],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_573542170f2c4083894d07e7409add90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d94b9524e6b946f58aec60357475adde = $(`<div id="html_d94b9524e6b946f58aec60357475adde" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_573542170f2c4083894d07e7409add90.setContent(html_d94b9524e6b946f58aec60357475adde);
+        
+
+        circle_marker_e81f96d4b47a4303a306772b82c59c35.bindPopup(popup_573542170f2c4083894d07e7409add90)
+        ;
+
+        
+    
+    
+            var circle_marker_43cc2db1595d4a62881a0d3ae4ff7620 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_3fc01d6f1ea04078bae2eec66177faf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2fbd9c8b6733400887576b3360a71632 = $(`<div id="html_2fbd9c8b6733400887576b3360a71632" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_3fc01d6f1ea04078bae2eec66177faf9.setContent(html_2fbd9c8b6733400887576b3360a71632);
+        
+
+        circle_marker_43cc2db1595d4a62881a0d3ae4ff7620.bindPopup(popup_3fc01d6f1ea04078bae2eec66177faf9)
+        ;
+
+        
+    
+    
+            var circle_marker_b5d782f88ee64d15967abb23689bbdc7 = L.circleMarker(
+                [54.7023545, -3.2765753],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_fe286ae8b648472f9f7681080bcb2846 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de538079661b4c928e0abeebe09d5d1f = $(`<div id="html_de538079661b4c928e0abeebe09d5d1f" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_fe286ae8b648472f9f7681080bcb2846.setContent(html_de538079661b4c928e0abeebe09d5d1f);
+        
+
+        circle_marker_b5d782f88ee64d15967abb23689bbdc7.bindPopup(popup_fe286ae8b648472f9f7681080bcb2846)
+        ;
+
+        
+    
+    
+            var circle_marker_f06d1cf881214a4eb4b490dec1e8d867 = L.circleMarker(
+                [45.9852129, 24.6859225],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_571e476b214b4bfbb2d33d3467272c63);
+        
+    
+        var popup_750216af4998444d870b1c2c7bbdeb1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_61cc691e2d254bb3ab01924c3d9c80d8 = $(`<div id="html_61cc691e2d254bb3ab01924c3d9c80d8" style="width: 100.0%; height: 100.0%;">One of the biggest countries in Europa</div>`)[0];
+            popup_750216af4998444d870b1c2c7bbdeb1d.setContent(html_61cc691e2d254bb3ab01924c3d9c80d8);
+        
+
+        circle_marker_f06d1cf881214a4eb4b490dec1e8d867.bindPopup(popup_750216af4998444d870b1c2c7bbdeb1d)
+        ;
+
+        
+    
+    
+            var layer_control_1a5790c3aea44dadb7e26b391afa59c0 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6b7d1f687c1442ceb772af4a9957c104,
+                },
+                overlays :  {
+                    "Your place" : feature_group_50fba25a08804d83bbd8e7ea8184bb39,
+                    "Films" : feature_group_ce54fd9f671f4b298fc6a7cd50b2b6ac,
+                    "Countries" : feature_group_571e476b214b4bfbb2d33d3467272c63,
+                },
+            };
+            L.control.layers(
+                layer_control_1a5790c3aea44dadb7e26b391afa59c0.base_layers,
+                layer_control_1a5790c3aea44dadb7e26b391afa59c0.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_ba4f681cfda547e98eba5e356ca3ed82);
+        
+</script>
