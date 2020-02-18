@@ -16,7 +16,7 @@ def read_users_input_of_coordinate(coordinate: str) -> bool or str:
         return True
     if "." not in coordinate:
         return "Error"
-    if len(coordinate) == 8:
+    if len(coordinate) == 6:
         return "Missing lat or long"
     return "Error"
 
