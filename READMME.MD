@@ -56,10 +56,16 @@ That can be useful for film maker and
 Example of work
 Please enter a year you would like to have a map: 2017
 Please enter your location (format: lat, long): 19.4424, -99.1310
+And wait...
+Results should be:
+![](1.png)
+![](2.png)
+![](3.png)
 
+What can we update?
 
-Please enter a year you would like to have a map: 2017
-Please enter your location (format: lat, long): -33.92000, 151.18520
+More work with all coordinates.
+
 
 
 
